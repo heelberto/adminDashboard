@@ -72,6 +72,46 @@ input{
 
 .greeting{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
+}
+
+#profilePhoto, #searchImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text]{
+    background-color: #E0E6EE;
+    border: none;
+    border-radius: 15px;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    background-color: #1a93d3;
+    color: white;
+    font-weight: 100;
+    height: 40px;
+    width: 100px;
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.YourProjects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px
+}
+
+.projectsCard{
+    background-color: #white;
+    width: 400px
+    height: 200px
 }
